@@ -1,6 +1,9 @@
 
 
-function findMinAndRemoveSorted(firstHalf, secondHalf){
+function findMinAndRemoveSorted(array){
+  let midpoint = array.length/2
+  let firstHalf = array.slice(0, midpoint)
+  let secondHalf = array.slice(midpoint, array.length)
   let minfirstHalf = firstHalf[0]
   let minsecondHalf = secondHalf[0]
 
